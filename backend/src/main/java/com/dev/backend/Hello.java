@@ -1,4 +1,4 @@
-package com.dev.backend.controller;
+package com.dev.backend;
 
 import java.util.Date;
 
@@ -12,6 +12,7 @@ public class Hello {
     
     @GetMapping("/")
     public String hello(){
-        return ("Olá mundo Spring " + new Date());
+        return "Olá mundo Spring" + new Date();
     }
+    
 }
